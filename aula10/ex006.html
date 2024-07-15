@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background-color: rgb(180, 35, 35);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="area">
+       Vem fundo porra
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            var a = window.document.querySelector('div#area')
+            a.innerText = 'Clicou!!'
+            a.style.background = 'blue'
+        }
+        function entrar() {
+            var a = document.querySelector('div#area')
+            a.innerText = 'Entrou!!'
+        }
+        function sair() {
+            var a = document.querySelector('div#area')
+            a.innerText = 'Saiu!!'
+            a.style.background = 'rgb(180, 35, 35)'
+        }
+    </script>
+</body>
+</html>
