@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 20px;
+            font: normal 19px arial;
+        }
+        input {
+            padding: 7px;
+            font-size: 19px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de entrada para o Brasil</h1>
+    <p>De onde você é? (escreva o nome completo do país)</p>
+    <input type="text" name="pais" id="pais" required min-length="3">
+    <input type="button" value="Enviar" onclick="saber()">
+    <div id="res">
+         
+    </div>
+    <script>
+        function saber() {
+            var pais = document.querySelector('input#pais')
+            var res = document.querySelector('div#res')
+            var pais = String(pais.value)
+            res.innerHTML = `<p> Seu país de origem é <strong>${pais}.</strong> </p>`
+            res.innerHTML += `<p> Iremos lhe mandar um questionário por email, obrigado! </p>`
+        }
+    </script>
+</body>
+</html>
