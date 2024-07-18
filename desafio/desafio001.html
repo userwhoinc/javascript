@@ -20,12 +20,12 @@
     <h1>Formulário de entrada para o Brasil</h1>
     <p>De onde você é? (escreva o nome completo do país)</p>
     <input type="text" name="pais" id="pais" required min-length="3">
-    <input type="button" value="Enviar" onclick="saber()">
+    <input type="button" value="Enviar" onclick="clicar()">
     <div id="res">
          
     </div>
     <script>
-        function saber() {
+        function clicar() {
             var pais = document.querySelector('input#pais')
             var res = document.querySelector('div#res')
             var pais = String(pais.value)
