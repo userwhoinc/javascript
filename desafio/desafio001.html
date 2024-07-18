@@ -30,7 +30,10 @@
             var res = document.querySelector('div#res')
             var pais = String(pais.value)
             res.innerHTML = `<p> Seu país de origem é <strong>${pais}.</strong> </p>`
-            res.innerHTML += `<p> Iremos lhe mandar um questionário por email, obrigado! </p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p> Voltando as origens! Seja bem-vindo(a) </p>`
+            } else {
+            res.innerHTML += `<p> Iremos lhe mandar um questionário por email, obrigado! </p>`}
         }
     </script>
 </body>
