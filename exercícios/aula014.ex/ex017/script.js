@@ -6,7 +6,7 @@ function contar() {
     } else {
         var n = Number(num.value)
         var c = 1
-        tab.innerHTML = ''
+        tab.innerHTML = '' // apaga e recomeça o conteudo
         while(c <= 10) {
             var item = document.createElement('option')
             item.text = `${n} x ${c} = ${n*c}`

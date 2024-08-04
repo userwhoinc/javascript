@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Seus dados</h1>
+    </header>
+    <section>
+        <p>
+            Nome: <input type="text" name="nome" id="nome" required minlength="3"> 
+        </p>
+        <p>
+            Idade: <input type="number" name="num" id="num" required maxlength="2"> 
+        </p>
+        <p>
+            Salário: <input type="number" name="sal" id="sal" required>
+        </p>
+        <p> 
+            Sexo: 
+            <input type="radio" name="sex" id="masc">
+            <label for="masc"> Homem </label>
+            <input type="radio" name="sex" id="fem">
+            <label for="fem"> Mulher </label>
+        </p>
+        <p>
+            Estado Civil:
+            <p>
+                <input type="radio" name="estado" id="cas">
+                <label for="casado"> Casado </label>
+            </p>
+            <p>
+                <input type="radio" name="estado" id="sol">
+                <label for="solteiro"> Solteiro </label>
+            </p>
+            <p>
+                <input type="radio" name="estado" id="dev">
+                <label for="devendo"> Devendo ao governo </label>
+            </p>
+        </p>
+        <p>
+            <input type="button" value="Enviar dados" onclick="enviar()">
+        </p>
+        <div id="msg">
+
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="script.js"> </script>
+</body>    
+</html>

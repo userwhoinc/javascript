@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font: normal 16px arial;
+    background-color: cadetblue;
+    margin: auto;
+    
+}
+h1 {
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+main {
+   text-align: center;
+   margin: auto;
+   background-color: aliceblue;
+   width: 400px;
+   padding: 30px;
+   height: 200px;
+}
+p {
+    margin: 20px;
+    text-align: center;
+}
