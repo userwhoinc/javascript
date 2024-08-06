@@ -1,10 +1,12 @@
 function conferir() {
-var valor = document.getElementById('num')
+var n = document.getElementById('num')
 var res = document.getElementById('res')
 
-if(valor % 2 == 0) {
-    res.innerHTML += 'Número par!!!'
-} else if(valor & 1 == 1) {
-    res.innerHTML += 'Número ímpar!!'
+res.innerHTML = ''
+if(n%2 == 0) {
+    res.innerHTML = ('Número par!!')
+} else {
+    res.innerHTML = ('Número ímpar!!')
 } 
 }
+
